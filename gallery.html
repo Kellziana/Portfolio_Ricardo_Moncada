@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content" />
+    <video id="modalVideo" class="modal-content" controls></video>
+
+    <!-- zoom -->
+    <button id="zoomBtn" class="zoom-btn">🔍</button>
+
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+
+
+<body>
+    <main class="container">
+        <!-- nav -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="public/riclogo.svg" alt="Ricardo Moncada Logo" class="logo-large">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="contact.html" class="nav-link">CONTACT ME</a>
+            </div>
+        </nav>
+
+        <!-- categories -->
+        <section class="filter-section">
+            <button class="filter-btn active" onclick="filterGallery('All Work')">All Work</button>
+            <button class="filter-btn" onclick="filterGallery('Digital Drawings')">Digital Drawings</button>
+            <button class="filter-btn" onclick="filterGallery('Videos')">Videos</button>
+            <button class="filter-btn" onclick="filterGallery('Motion Graphics')">Motion Graphics</button>
+        </section>
+
+        <!-- gallery from sheets -->
+        <section class="gallery" id="gallery">
+        </section>
+        
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
