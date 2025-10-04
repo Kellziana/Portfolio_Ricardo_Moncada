@@ -54,7 +54,7 @@ faders.forEach(fader => {
 
 
 // Google Sheets API URL
-const SHEET_URL = 'https://api.sheetbest.com/sheets/a0ecc95e-1279-4023-9d69-3ef5f8bd83cf';
+const SHEET_URL = 'https://opensheet.elk.sh/1L3DOg-Ys4Q-RSgb2UBjVtm-F0MxCk3kt0TBpOrcweSc/Sheet1';
 
 
 // gallery
